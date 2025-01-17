@@ -48,10 +48,10 @@ const MobileNav = () => {
 
       <SheetContent className="flex flex-col">
         {/* logo */}
-        <div className="mt-32 mb-40 text-center text-2xl">
+        <div className="mt-24 mb-24 text-center text-2xl">
           <Link href="/">
             <h1 className="text-4xl font-semibold">
-              Kherin<span className="text-accent">.</span>
+              kherin-<span className="text-accent">eth</span>
             </h1>
           </Link>
         </div>
