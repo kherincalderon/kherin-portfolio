@@ -7,30 +7,31 @@ import { motion } from 'framer-motion';
 const services = [
   {
     num: '01',
-    title: 'Web Development',
+    title: 'Tech Leadership',
     description:
-      'I can help you build a website that will help you grow your business.',
+      'I lead development teams in implementing technological projects, leveraging Agile methodologies to ensure collaboration and efficiency. I focus on delivering innovative, scalable, and high-quality solutions.',
     href: '',
   },
   {
     num: '02',
-    title: 'UI/UX Design',
+    title: 'Web Development',
     description:
-      'I can help you build a website that will help you grow your business.',
+      'I design and develop custom web and mobile applications using modern technologies like React, React Native, and TypeScript, with a focus on scalability, performance, and an optimized user experience.',
     href: '',
   },
   {
     num: '03',
-    title: 'Logo Design',
+    title: 'Blockchain & FinTech',
     description:
-      'I can help you build a website that will help you grow your business.',
+      'I create innovative fintech solutions that integrate blockchain and smart contracts, helping companies digitize financial processes, streamline payments, and ensure secure, transparent transactions.',
+
     href: '',
   },
   {
     num: '04',
-    title: 'SEO Optimization',
+    title: 'E-Commerce',
     description:
-      'I can help you build a website that will help you grow your business.',
+      'I develop optimized and tailored e-commerce platforms, delivering seamless and scalable user interfaces that enhance customer experience, boost conversions, and streamline operational processes.',
     href: '',
   },
 ];

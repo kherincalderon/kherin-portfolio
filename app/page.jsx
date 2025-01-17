@@ -12,15 +12,16 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Engineer</span>
+            <span className="text-xl">Software Engineer 👨🏻‍💻</span>
             <h1 className="h1">
               Hello I'm
               <br />
-              <span className="text-accent">Kherin A. Calderón</span>
+              <span className="text-accent">Kherin</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Frontend Developer & Tech Leader con más de 7 años en el mundo
-              digital, especializado en React Native, TypeScript y Solidity.
+              Frontend Developer & Tech Leader with more than 7 years in the
+              digital world, specialized in React Native, TypeScript and
+              Solidity.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
