@@ -1,15 +1,14 @@
 'use client';
 
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaNodeJs,
-  FaFigma,
-} from 'react-icons/fa';
+import { FaWordpress, FaReact, FaNodeJs, FaFigma } from 'react-icons/fa';
 
-import { SiTailwindcss, SiNextdotjs } from 'react-icons/si';
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiSolidity,
+  SiWoocommerce,
+} from 'react-icons/si';
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
@@ -25,11 +24,11 @@ import { motion } from 'framer-motion';
 const about = {
   title: 'About me',
   desctiption:
-    "I'm a full-stack developer with a passion for creating beautiful and functional websites. I have experience with a variety of technologies, including HTML, CSS, JavaScript, React, Node.js, and more. I'm always looking to learn new things and improve my skills, and I'm excited to take on new challenges and projects.",
+    'My experience in marketing, e-commerce, crypto, and fintech has enabled me to blend creativity with technology to develop scalable solutions that address challenges and open new opportunities across various industries. I’ve also led multidisciplinary teams, fostering collaboration and driving continuous growth to meet strategic goals.',
   info: [
     {
       fielName: 'Name',
-      fieldValue: 'Kherin',
+      fieldValue: 'Kherin 👨🏻‍💻',
     },
     {
       fielName: 'Phone',
@@ -41,11 +40,11 @@ const about = {
     },
     {
       fielName: 'Zoom',
-      fieldValue: 'kherincalderon',
+      fieldValue: '@kherincalderon',
     },
     {
-      fielName: 'Nationality',
-      fieldValue: 'Guatemalan',
+      fielName: 'Based in',
+      fieldValue: 'Guatemala 🇬🇹',
     },
     {
       fielName: 'Email',
@@ -66,27 +65,17 @@ const experience = {
   title: 'My Experience',
   icon: '/assets/resume/badge.svg',
   description:
-    "I've been working as a full-stack developer for over 7 years. I have experience with a variety of technologies, including HTML, CSS, JavaScript, React, Node.js, and more. I've worked on a wide range of projects, from small websites to large web applications, and I'm always looking to learn new things and improve my skills.",
+    'With over 7 years in the digital world, I’ve led teams and developed innovative solutions in fintech, e-commerce, and blockchain. Focused on scalability and performance, I deliver high-quality, user-centric applications. Experienced in Agile methodologies, I help businesses optimize and digitalize their processes.',
   items: [
     {
-      company: 'Company Name',
-      position: 'Full-stack Developer',
-      duration: '2019 - Present',
+      company: 'Eleva Marketing',
+      position: 'Chief Marketing Officer',
+      duration: '2017 - 2020',
     },
     {
-      company: 'Company Name',
-      position: 'Full-stack Developer',
-      duration: '2019 - Present',
-    },
-    {
-      company: 'Company Name',
-      position: 'Full-stack Developer',
-      duration: '2019 - Present',
-    },
-    {
-      company: 'Company Name',
-      position: 'Full-stack Developer',
-      duration: '2019 - Present',
+      company: 'LUA Studio',
+      position: 'Frontend Developer',
+      duration: '2020 - Present',
     },
   ],
 };
@@ -95,27 +84,27 @@ const education = {
   title: 'My Education',
   icon: '/assets/resume/cap.svg',
   description:
-    "I've been working as a full-stack developer for over 7 years. I have experience with a variety of technologies, including HTML, CSS, JavaScript, React, Node.js, and more. I've worked on a wide range of projects, from small websites to large web applications, and I'm always looking to learn new things and improve my skills.",
+    'I have a solid foundation in business and software development, with specialized expertise in blockchain technology. As a self-taught professional, I am committed to continuous learning and adapting to new technologies, constantly expanding my skill set to stay ahead in the digital landscape.',
   items: [
     {
-      institution: 'Institution Name',
-      degree: 'Full-stack Developer',
-      duration: '2019 - Present',
+      institution: 'Microsoft',
+      degree: 'Specialist Program',
+      duration: '2017',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Full-stack Developer',
-      duration: '2019 - Present',
+      institution: 'GAIA',
+      degree: 'Administración de Negocios',
+      duration: '2018 - 2020',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Full-stack Developer',
-      duration: '2019 - Present',
+      institution: 'freeCodeCamp',
+      degree: 'Algorithms & Data Structures',
+      duration: '2021',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Full-stack Developer',
-      duration: '2019 - Present',
+      institution: 'Cadena',
+      degree: 'Blockchain Developer',
+      duration: '2022',
     },
   ],
 };
@@ -123,23 +112,23 @@ const education = {
 const skills = {
   title: 'My Skills',
   description:
-    'I have experience with a variety of technologies, including HTML, CSS, JavaScript, React, Node.js, and more. I am always looking to learn new things and improve my skills, and I am excited to take on new challenges and projects.',
+    'I have experience with a variety of technologies, including React, TypeScript, Next.js, Solidity, and more. Always eager to learn and enhance my skills, I am excited to take on new challenges and contribute to innovative projects.',
   skillList: [
-    {
-      name: 'HTML',
-      icon: <FaHtml5 />,
-    },
-    {
-      name: 'CSS',
-      icon: <FaCss3 />,
-    },
-    {
-      name: 'JavaScript',
-      icon: <FaJs />,
-    },
     {
       name: 'React',
       icon: <FaReact />,
+    },
+    {
+      name: 'TypeScript',
+      icon: <SiTypescript />,
+    },
+    {
+      name: 'Next.js',
+      icon: <SiNextdotjs />,
+    },
+    {
+      name: 'Solidity',
+      icon: <SiSolidity />,
     },
     {
       name: 'Node.js',
@@ -150,8 +139,8 @@ const skills = {
       icon: <SiTailwindcss />,
     },
     {
-      name: 'Next.js',
-      icon: <SiNextdotjs />,
+      name: 'Wordpress',
+      icon: <FaWordpress />,
     },
     {
       name: 'Figma',
