@@ -10,14 +10,14 @@ const services = [
     title: 'Tech Leadership',
     description:
       'I lead development teams in implementing technological projects, leveraging Agile methodologies to ensure collaboration and efficiency. I focus on delivering innovative, scalable, and high-quality solutions.',
-    href: '',
+    href: '/contact',
   },
   {
     num: '02',
     title: 'Web Development',
     description:
       'I design and develop custom web and mobile applications using modern technologies like React, React Native, and TypeScript, with a focus on scalability, performance, and an optimized user experience.',
-    href: '',
+    href: '/contact',
   },
   {
     num: '03',
@@ -25,14 +25,14 @@ const services = [
     description:
       'I create innovative fintech solutions that integrate blockchain and smart contracts, helping companies digitize financial processes, streamline payments, and ensure secure, transparent transactions.',
 
-    href: '',
+    href: '/contact',
   },
   {
     num: '04',
     title: 'E-Commerce',
     description:
       'I develop optimized and tailored e-commerce platforms, delivering seamless and scalable user interfaces that enhance customer experience, boost conversions, and streamline operational processes.',
-    href: '',
+    href: '/contact',
   },
 ];
 
