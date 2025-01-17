@@ -13,7 +13,7 @@ const stats = [
   },
   {
     num: 8,
-    text: 'Technologies mastered',
+    text: 'Techs mastered',
   },
   {
     num: 300,
@@ -40,7 +40,7 @@ const Stats = () => {
                 />
                 <p
                   className={`${
-                    item.text.length < 10 ? 'max-w-[100px]' : 'max-w-[150px]'
+                    item.text.length < 10 ? 'max-w-[100px]' : 'max-w-[80px]'
                   } leading-snug text-white/80`}
                 >
                   {item.text}
