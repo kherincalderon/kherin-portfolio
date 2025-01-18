@@ -28,7 +28,7 @@ const about = {
   info: [
     {
       fielName: 'Name',
-      fieldValue: 'Kherin 👨🏻‍💻',
+      fieldValue: 'Kherin 🥷🏼',
     },
     {
       fielName: 'Phone',
