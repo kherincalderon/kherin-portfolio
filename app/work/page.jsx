@@ -23,33 +23,37 @@ import Image from 'next/image';
 const projects = [
   {
     num: '01',
-    category: 'frontend',
-    title: 'project 1',
+    category: 'Mobile',
+    title: 'Restate',
     description:
-      'Lorem Ipsum is Lorem Ipsum and Lore Lorem Ipsum is Lorem Ipsum is Lorem Ipsum',
-    stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'JavaScript' }],
+      'Designed a native app for browsing and saving property listings with real-time updates and location-based recommendations.',
+    stack: [
+      { name: 'React Native' },
+      { name: 'TypeScript' },
+      { name: 'Tailwind CSS' },
+    ],
     image: '/assets/work/thumb1.png',
     live: '/',
     github: '/',
   },
   {
     num: '02',
-    category: 'frontend',
-    title: 'project 2',
+    category: 'blockchain',
+    title: 'Krypt',
     description:
-      'Lorem Ipsum is Lorem Ipsum and Lore Lorem Ipsum is Lorem Ipsum is Lorem Ipsum',
-    stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'JavaScript' }],
+      'Developed a blockchain-based DApp for secure, low-cost global money transfers using smart contracts.',
+    stack: [{ name: 'React' }, { name: 'TypeScript' }, { name: 'Solidity' }],
     image: '/assets/work/thumb2.png',
     live: '/',
     github: '/',
   },
   {
     num: '03',
-    category: 'frontend',
-    title: 'project 1',
+    category: 'E-Commerce',
+    title: 'TraDo',
     description:
-      'Lorem Ipsum is Lorem Ipsum and Lore Lorem Ipsum is Lorem Ipsum is Lorem Ipsum',
-    stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'JavaScript' }],
+      'Built a WooCommerce site with an interactive menu, online payments, and real-time order tracking.',
+    stack: [{ name: 'WooCommerce' }, { name: 'JavaScript' }, { name: 'PHP' }],
     image: '/assets/work/thumb3.png',
     live: '/',
     github: '/',
@@ -83,8 +87,12 @@ const Work = () => {
               </div>
               {/* project category */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.title}
               </h2>
+              {/* project category */}
+              <h3 className="text-[28px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+                {project.category} project
+              </h3>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}

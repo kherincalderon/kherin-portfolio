@@ -22,7 +22,7 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: 'Phone',
-    description: '(502) 5513 6889',
+    description: '(+502) 5513 6889',
   },
   {
     icon: <FaEnvelope />,
@@ -51,12 +51,14 @@ const Contact = () => {
           {/* form */}
           <div className="xl:h-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl text-accent">Let's work together</h3>
+              <h3 className="text-4xl text-accent">
+                Let’s build something great together!
+              </h3>
               <p className="text-white/60">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Inventore neque, sunt, nam omnis cum modi dolorum accusamus
-                tempora, accusantium eligendi quisquam natus ut. Eos quas
-                dolorem quis fugit pariatur eligendi.
+                Have a project in mind or looking to collaborate? Feel free to
+                reach out! Whether you need innovative solutions, technical
+                expertise, or a fresh perspective, I’m here to help bring your
+                ideas to life. Let’s connect and create something impactful.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -104,7 +106,7 @@ const Contact = () => {
                     </div>
                     <div className="flex-1">
                       <p className="text-white/60">{item.title}</p>
-                      <h3 className="text-xl">{item.description}</h3>
+                      <h3 className="text-lg">{item.description}</h3>
                     </div>
                   </li>
                 );
