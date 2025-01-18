@@ -39,7 +39,7 @@ const projects = [
   {
     num: '02',
     category: 'blockchain',
-    title: 'Krypt',
+    title: 'Prism',
     description:
       'Developed a blockchain-based DApp for secure, low-cost global money transfers using smart contracts.',
     stack: [{ name: 'React' }, { name: 'TypeScript' }, { name: 'Solidity' }],

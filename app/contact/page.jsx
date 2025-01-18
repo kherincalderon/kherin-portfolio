@@ -1,4 +1,5 @@
 'use client';
+import { useState } from 'react';
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -37,6 +38,53 @@ const info = [
 ];
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstname: '',
+    lastname: '',
+    email: '',
+    phone: '',
+    service: '',
+    message: '',
+  });
+
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value, // Esto actualiza solo el campo que cambió
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('Sending...');
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus('Message sent successfully!');
+        setFormData({
+          firstname: '',
+          lastname: '',
+          email: '',
+          phone: '',
+          service: '',
+          message: '',
+        });
+      } else {
+        setStatus('Error sending message.');
+      }
+    } catch (error) {
+      setStatus('Error sending message.');
+    }
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -50,7 +98,10 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* form */}
           <div className="xl:h-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form
+              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+              onSubmit={handleSubmit}
+            >
               <h3 className="text-4xl text-accent">
                 Let’s build something great together!
               </h3>
@@ -62,21 +113,50 @@ const Contact = () => {
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input
+                  type="text"
+                  placeholder="Firstname"
+                  value={formData.firstname} // Vincula al estado
+                  onChange={handleChange} // Actualiza el estado cuando el valor cambia
+                  required
+                />
+                <Input
+                  type="text"
+                  placeholder="Lastname"
+                  value={formData.lastname}
+                  onChange={handleChange}
+                  required
+                />
+                <Input
+                  type="email"
+                  placeholder="Email address"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+                <Input
+                  type="phone"
+                  placeholder="Phone number"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                />
               </div>
               {/* select */}
               <Select>
-                <SelectTrigger className="w-full">
+                <SelectTrigger
+                  className="w-full"
+                  value={formData.service}
+                  onChange={handleChange}
+                  required
+                >
                   <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
                     <SelectItem value="tech">Tech Leadership</SelectItem>
-                    <SelectItem value="web">Web Development</SelectItem>
+                    <SelectItem value="app">App Development</SelectItem>
                     <SelectItem value="fintech">
                       FinTech & Blockchain
                     </SelectItem>
@@ -88,9 +168,12 @@ const Contact = () => {
               <Textarea
                 className="h-[200px]"
                 placeholder="Type your message here..."
+                value={formData.message}
+                onChange={handleChange}
+                required
               />
               {/* btn */}
-              <Button size="lg" className="max-w-40">
+              <Button size="lg" className="max-w-40" type="submit">
                 Send message
               </Button>
             </form>

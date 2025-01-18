@@ -14,7 +14,7 @@ const services = [
   },
   {
     num: '02',
-    title: 'Web Development',
+    title: 'App Development',
     description:
       'I design and develop custom web and mobile applications using modern technologies like React, React Native, and TypeScript, with a focus on scalability, performance, and an optimized user experience.',
     href: '/contact',
