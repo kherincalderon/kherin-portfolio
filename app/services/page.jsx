@@ -7,16 +7,16 @@ import { motion } from 'framer-motion';
 const services = [
   {
     num: '01',
-    title: 'Tech Leadership',
+    title: 'App Development',
     description:
-      'I lead development teams in implementing technological projects, leveraging Agile methodologies to ensure collaboration and efficiency. I focus on delivering innovative, scalable, and high-quality solutions.',
+      'I design and develop custom web and mobile applications using modern technologies like React, React Native, and TypeScript, with a focus on scalability, performance, and an optimized user experience.',
     href: '/contact',
   },
   {
     num: '02',
-    title: 'App Development',
+    title: 'Tech Leadership',
     description:
-      'I design and develop custom web and mobile applications using modern technologies like React, React Native, and TypeScript, with a focus on scalability, performance, and an optimized user experience.',
+      'I lead development teams in implementing technological projects, leveraging Agile methodologies to ensure collaboration and efficiency. I focus on delivering innovative, scalable, and high-quality solutions.',
     href: '/contact',
   },
   {
